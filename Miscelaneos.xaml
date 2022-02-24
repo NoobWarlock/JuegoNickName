@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Miscelaneos" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="752,515" sap2010:WorkflowViewState.IdRef="Miscelaneos_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Miscelaneos" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="675,507" sap2010:WorkflowViewState.IdRef="Miscelaneos_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
@@ -48,16 +48,8 @@
   <Sequence DisplayName="Miscelaneos" sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="vAlgo" />
-      <Variable x:TypeArguments="x:Decimal" Name="vPrecio">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="x:Decimal" ExpressionText="18.90d" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="vObjects">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Objetos</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Decimal" Default="[18.90d]" Name="vPrecio" />
+      <Variable x:TypeArguments="x:String" Default="Objetos" Name="vObjects" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
